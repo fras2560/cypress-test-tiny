@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Small project for quickly testing Cypress.io test runner",
   "scripts": {
+    "server": "node simple-server.js",
     "cypress:run": "cypress run",
     "cypress:open": "cypress open",
     "cypress:verify": "cypress verify",
@@ -15,7 +16,11 @@
   "author": "Gleb Bahmutov <gleb@cypress.io>",
   "license": "ISC",
   "devDependencies": {
+    "cypress": "^5.1.0",
     "ok-file": "1.5.2"
+  },
+  "dependencies": {
+    "express": "4.17.1"
   },
   "repository": {
     "type": "git",

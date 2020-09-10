@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
-describe('page', () => {
-  it('works', () => {
-    cy.visit('https://example.cypress.io')
+context('Visit Empty Redirect', () => {
+  it('Visit - a 302 redirect with an empty body', () => {
+    cy.visit({url: '/redirect', method: 'POST'});
   })
 })
