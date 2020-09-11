@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
         <html>
             <body>
                 <form action="/redirect" method="post">
-                    <input type="submit" value="Redirect">
+                    <input data-cy="submit" type="submit" value="Redirect">
                 </form>
             </body>
         </html>
@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
   })
 
 app.get('/whatsup', (req, res) => {
-    res.send("Whats up")
+    res.send("<p>Whats up</p>")
 })
 
 app.listen(port, () => {
